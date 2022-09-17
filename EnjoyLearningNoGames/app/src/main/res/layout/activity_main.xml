@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_lexue_frame"
+            android:text="乐学"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_lexue_frame_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@drawable/rb_text_frame_drawable_selector"/>
+        <RadioButton
+            android:id="@+id/rb_jinyou_frame"
+            android:text="禁游"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_jinyou_frame_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@drawable/rb_text_frame_drawable_selector"/>
+        <RadioButton
+            android:id="@+id/rb_mine_frame"
+            android:text="我的"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_mine_frame_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@drawable/rb_text_frame_drawable_selector"/>
+    </RadioGroup>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
